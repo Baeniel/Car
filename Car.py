@@ -1,12 +1,11 @@
 from Class import car
 
-
 while True:
-    if "driving":
-        mycar = car(brand=None, model=None, year=None, status=None)
+    mycar = car(brand=None, model=None, year=None)
+    mycar.status()
+    if mycar.status == "driving":
         print(mycar.drive())
         break
     else:
-        mycar = car(brand=None, model=None, year=None, status=None)
         print(mycar.stop())
         break
